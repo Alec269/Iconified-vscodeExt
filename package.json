@@ -2,12 +2,35 @@
   "name": "iconified",
   "displayName": "Iconified",
   "description": "Set your own custom icons for files and folders",
+  "publisher": "Alec269",
   "version": "1.0.0",
+  "license": "MIT",
+  "icon": "images/icon.png",
+  "repository": {
+    "url": "https://github.com/Alec269/Iconified-vscodeExt.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Alec269/Iconified-vscodeExt/issues"
+  },
+  "homepage": "https://github.com/Alec269/Iconified-vscodeExt#readme"
+,
   "engines": {
     "vscode": "^1.60.0"
   },
   "categories": [
     "Themes"
+  ],
+  "galleryBanner": {
+    "color": "#1e1e1e",
+    "theme": "dark"
+  },
+  "keywords": [
+    "icons",
+    "icon theme",
+    "file icons",
+    "folder icons",
+    "custom icons",
+    "theme"
   ],
   "activationEvents": [
     "onStartupFinished"
