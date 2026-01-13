@@ -1,0 +1,49 @@
+{
+  "name": "iconified",
+  "displayName": "Iconified",
+  "description": "Set your own custom icons for files and folders",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "iconified.openFileIconsFolder",
+        "title": "Iconified: Open File Icons Folder"
+      },
+      {
+        "command": "iconified.openFolderIconsFolder",
+        "title": "Iconified: Open Folder Icons Folder"
+      },
+      {
+        "command": "iconified.refreshIcons",
+        "title": "Iconified: Refresh Icons"
+      }
+    ],
+    "iconThemes": [
+      {
+        "id": "iconified-custom-icons",
+        "label": "Iconified",
+        "path": "./icons/iconified-icon-theme.json"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/node": "^16.x",
+    "@types/vscode": "^1.60.0",
+    "typescript": "^4.5.0"
+  }
+}
